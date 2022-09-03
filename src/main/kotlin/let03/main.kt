@@ -1,5 +1,7 @@
 package let03
 
+import java.time.Period
+
 fun main() {
 
     val number1 = 3
@@ -10,6 +12,7 @@ fun main() {
     val number3 : Int? = 3
     val number4 : Long = number3?.toLong() ?: 0
 
+    whatIfObjCanBeNull(null)
 }
 
 fun printAgeIfPerson(obj: Any) {
@@ -27,4 +30,16 @@ fun printNothingIfNotPerson(obj: Any) {
     if (obj !is Person) {
         println("it's not person")
     }
+}
+
+// 만약 obj 에 null 이 들어올 수 있다면?
+fun whatIfObjCanBeNull(obj: Any?) {
+
+//    val person = obj as Person
+//    whatIfObjCanBeNull(null) 이면
+//    println(person.age) // NEP 발생!!!!
+
+    val person = obj as? Person // as? 를 넣어줌으로써 null 들어올 수 있다는 가능성을 시사
+    println(person?.age) // null 이 들어와도 null이 출력됨 (NEP 는 발생하지 않음)
+
 }

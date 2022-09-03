@@ -13,6 +13,33 @@ fun main() {
     val number4 : Long = number3?.toLong() ?: 0
 
     whatIfObjCanBeNull(null)
+
+    val person = Person("정호", 100)
+    // java
+    println(String.format("이름 : %s", person.name))
+
+    // kotlin
+    println("이름 : ${person.name}")
+
+    val age = 10
+
+    println("나이 : $age")
+
+    val str = """
+        ABC
+        EFG
+        ${age}
+    """.trimIndent()
+
+    println(str)
+
+    val abc = "ABC"
+
+    // java
+    // abc.charAt(1);
+
+    println(abc[0])
+
 }
 
 fun printAgeIfPerson(obj: Any) {

@@ -20,3 +20,11 @@ fun printAgeIfPerson(obj: Any) {
         println(person.age)
     }
 }
+
+fun printNothingIfNotPerson(obj: Any) {
+
+    // !(obj is person) 도 되지만 아래와 같이 !is 로 사용할 수 있다.
+    if (obj !is Person) {
+        println("it's not person")
+    }
+}

@@ -1,6 +1,4 @@
-package let03
-
-import java.time.Period
+package lec03
 
 fun main() {
 

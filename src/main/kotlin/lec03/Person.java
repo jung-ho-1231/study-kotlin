@@ -1,4 +1,4 @@
-package let03;
+package lec03;
 
 public class Person {
     private String name;

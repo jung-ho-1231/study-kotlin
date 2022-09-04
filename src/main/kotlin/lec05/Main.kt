@@ -44,7 +44,6 @@ fun notValidateScore(score: Int) {
     }
 }
 
-
 fun getGradeWithSwitch(score: Int): String {
     return when (score) {
         9 -> "A"

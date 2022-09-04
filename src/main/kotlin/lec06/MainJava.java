@@ -1,4 +1,4 @@
-package let06;
+package lec06;
 
 import java.util.Arrays;
 import java.util.List;

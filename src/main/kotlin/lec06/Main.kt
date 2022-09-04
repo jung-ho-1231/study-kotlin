@@ -1,4 +1,4 @@
-package let06
+package lec06
 
 fun main() {
     // 컬렉션 반복문

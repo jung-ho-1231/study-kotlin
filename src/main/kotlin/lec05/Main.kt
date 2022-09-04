@@ -3,7 +3,6 @@ package lec05
 import java.lang.IllegalArgumentException
 
 fun main() {
-
 }
 
 fun validateScoreIsNotNegative(score: Int) {

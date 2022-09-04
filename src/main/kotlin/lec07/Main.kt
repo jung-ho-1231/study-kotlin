@@ -5,6 +5,7 @@ import java.io.File
 import java.io.FileReader
 import java.lang.IllegalArgumentException
 import java.lang.NumberFormatException
+import kotlin.concurrent.fixedRateTimer
 
 fun parseIntoOrThrow(str: String): Int {
     try {
@@ -29,5 +30,11 @@ fun readFile() {
     val reader = BufferedReader(FileReader(file))
     println(reader.readLine())
     reader.close()
+}
+
+fun readFileWithPath (path :String) {
+    BufferedReader(FileReader(path)).use { reader ->
+        println(reader.readLine())
+    }
 }
 

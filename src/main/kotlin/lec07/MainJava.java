@@ -3,6 +3,7 @@ package lec07;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
+import java.nio.BufferUnderflowException;
 
 public class MainJava {
     public static void main(String[] args) throws IOException {
@@ -33,5 +34,12 @@ public class MainJava {
         System.out.println(reader.readLine());
         reader.close();
     }
+
+    public void readFileWithPath(String path) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
+            System.out.println(reader.readLine());
+        }
+    }
 }
+
 

@@ -20,7 +20,7 @@ fun getPassOrFail(score: Int): String {
     }
 }
 
-fun getGrade(score: Int) :String {
+fun getGrade(score: Int): String {
     return if (score >= 90) {
         return "A"
     } else if (score >= 80) {
@@ -32,7 +32,7 @@ fun getGrade(score: Int) :String {
     }
 }
 
-fun validateScore (score :Int) {
+fun validateScore(score: Int) {
     if (0 in 0..100) {
         println("0부터 100 안에 포함됩니다.")
     }
@@ -45,7 +45,7 @@ fun notValidateScore(score: Int) {
 }
 
 
-fun getGradeWithSwitch(score: Int) : String {
+fun getGradeWithSwitch(score: Int): String {
     return when (score) {
         9 -> "A"
         8 -> "B"
@@ -54,18 +54,32 @@ fun getGradeWithSwitch(score: Int) : String {
     }
 }
 
-fun getGradeWithSwitchWithIn(score: Int) : String {
+fun getGradeWithSwitchWithIn(score: Int): String {
     return when (score) {
         in 90..99 -> "A"
         in 80..89 -> "B"
-        in 70 .. 79 -> "C"
+        in 70..79 -> "C"
         else -> "D"
     }
 }
 
-fun startsWithA(obj: Any) : Boolean {
+fun startsWithA(obj: Any): Boolean {
     return when (obj) {
         is String -> obj.startsWith("A")
         else -> false
+    }
+}
+
+fun judgeNumber(number: Int) {
+    when (number) {
+        1, 0, -1 -> println("어디서 많이 본 숫자입니다.")
+    }
+}
+
+fun judgeNumber2(number: Int) {
+    when {
+        number == 0 -> println("주어진 숫자는 0입니다.")
+        number % 2 == 0 -> println("주어진 숫자는 짝수입니다.")
+        else -> println("주어진 숫자는 홀수입니다.")
     }
 }

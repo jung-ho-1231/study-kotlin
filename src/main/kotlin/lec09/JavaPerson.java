@@ -27,4 +27,9 @@ public class JavaPerson {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public boolean isAdult(){
+        return  this.age >= 20;
+    }
 }
+

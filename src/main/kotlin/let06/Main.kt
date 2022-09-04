@@ -11,4 +11,7 @@ fun main() {
         println(i)
     }
 
+    for (i in 3 downTo 1) {
+        println(i)
+    }
 }

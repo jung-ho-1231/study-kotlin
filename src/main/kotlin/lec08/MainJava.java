@@ -29,5 +29,11 @@ public class MainJava {
         // 마찬가지로 num 이 기본적으로 3을 많이 사용한다면 아래와 같이 변경할 수 있다.
         repeat(str, 3, true);
     }
+
+    public static void printAll(String... strings) {
+        for (String str : strings) {
+            System.out.println(str);
+        }
+    }
 }
 

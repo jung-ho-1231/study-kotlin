@@ -14,6 +14,20 @@ public class Main {
     private String getPassOrFail(int score) {
         return score >= 50 ? "P" : "F";
     }
+
+    private String getGradeWithSwitch(int score) {
+        switch(score /10 ){
+            case 9 :
+                return "A";
+            case 8 :
+                return "B";
+            case 7 :
+                return "C";
+            default:
+                return "D";
+        }
+
+    }
 }
 
 

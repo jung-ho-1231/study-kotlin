@@ -43,3 +43,13 @@ fun notValidateScore(score: Int) {
         println("0부터 100까지 포함되지 않는 숫자입니다.")
     }
 }
+
+
+fun getGradeWithSwitch(score: Int) : String {
+    return when (score) {
+        9 -> "A"
+        8 -> "B"
+        7 -> "C"
+        else -> "D"
+    }
+}

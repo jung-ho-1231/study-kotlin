@@ -16,18 +16,28 @@ public class Main {
     }
 
     private String getGradeWithSwitch(int score) {
-        switch(score /10 ){
-            case 9 :
+        switch (score / 10) {
+            case 9:
                 return "A";
-            case 8 :
+            case 8:
                 return "B";
-            case 7 :
+            case 7:
                 return "C";
             default:
                 return "D";
         }
 
     }
+
+    private boolean startsWithA(Object obj) {
+        if (obj instanceof String) {
+            return (((String) obj).startsWith("A"));
+        } else {
+            return false;
+        }
+
+    }
+
 }
 
 

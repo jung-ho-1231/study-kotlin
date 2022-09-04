@@ -62,3 +62,10 @@ fun getGradeWithSwitchWithIn(score: Int) : String {
         else -> "D"
     }
 }
+
+fun startsWithA(obj: Any) : Boolean {
+    return when (obj) {
+        is String -> obj.startsWith("A")
+        else -> false
+    }
+}

@@ -1,4 +1,4 @@
-package lec10;
+package lec10.abtractExample;
 
 public class JavaCat extends JavaAnimal{
 

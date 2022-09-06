@@ -1,4 +1,4 @@
-package lec10
+package lec10.abtractExample
 
 abstract class Animal(
     protected val species: String,

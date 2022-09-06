@@ -1,4 +1,4 @@
-package lec10;
+package lec10.abtractExample;
 
 import org.jetbrains.annotations.NotNull;
 
